@@ -59,11 +59,11 @@ try
         //  productUpdate.Slug = "bebida-energetica-3 update";
         //  context.SaveChanges();
 
-          Console.WriteLine("Elimar products");
-           Producto productDelete = context.Productos.Find(2);
-           context.Productos.Attach(productDelete);
-           context.Productos.Remove(productDelete);
-           context.SaveChanges();
+        //   Console.WriteLine("Elimar products");
+        //    Producto productDelete = context.Productos.Find(2);
+        //    context.Productos.Attach(productDelete);
+        //    context.Productos.Remove(productDelete);
+        //    context.SaveChanges();
 
         Console.WriteLine("listar products");
         var queryP = from p in context.Productos orderby p.Id descending select p;
